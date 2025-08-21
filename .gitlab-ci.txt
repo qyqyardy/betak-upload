@@ -1,0 +1,42 @@
+stages:
+    - build
+    - deploy
+variables:
+    DOCKERFILE_PATH: Dockerfile
+    CONTAINER_IMAGE: batman
+
+prod-build:
+    stage: build
+    image: docker:stable
+    services:
+        - docker:dind
+    before_script:
+        - docker info
+        - docker login registry.gitlab.com -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}
+    script:
+        - docker build -t "$CI_REGISTRY_IMAGE" .
+        - docker push "$CI_REGISTRY_IMAGE"
+        - echo "Build successfully!"
+    after_script:
+        - docker logout ${CI_REGISTRY}
+    only:
+        - main
+
+prod-deploy:
+    stage: deploy
+    before_script:
+        - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )' 
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY_PROD" | tr -d '\r' | ssh-add -
+        - mkdir -p ~/.ssh
+        - chmod 700 ~/.ssh
+        - ssh-keyscan $VM_PROD >> ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+        # - ssh-add ~/.ssh/id_rsa
+    script:
+        - ssh $USER_PROD@$VM_PROD "docker pull registry.gitlab.com/ddm-devops/axa-testing"
+        - ssh $USER_PROD@$VM_PROD "docker stop axa-testing || true && docker rm axa-testing || true"
+        - ssh $USER_PROD@$VM_PROD "docker run -p 8080:8080 -d --name axa-testing 
+    only:
+        - tags
+        - main

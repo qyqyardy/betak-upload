@@ -1,0 +1,12 @@
+<div class="header">🚨 Migrasi File Gagal</div>
+<div class="details">
+    <p>Halo Tim,</p>
+    <p>Terdeteksi kegagalan dalam proses migrasi file recording ke AWS S3:</p>
+    <ul>
+        <li><strong>File:</strong> {{ filename }}</li>
+        <li><strong>Status:</strong> Gagal upload</li>
+        <li><strong>Waktu:</strong> {{ timestamp }}</li>
+    </ul>
+    <p>Silakan periksa sistem log pada folder <code>/opt/airflow/logging</code> atau dashboard monitoring untuk
+        informasi lebih lanjut.</p>
+</div>

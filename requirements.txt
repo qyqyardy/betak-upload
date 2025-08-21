@@ -1,0 +1,4 @@
+apache-airflow==2.9.1
+psycopg2-binary==2.9.6
+boto3==1.26.154
+python-dotenv==1.0.0
