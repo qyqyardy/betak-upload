@@ -1174,3 +1174,45 @@
 [2025-09-29T07:06:09.988+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:09.988+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
 [2025-09-29T07:06:09.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.114 seconds
 [2025-09-29T07:06:10.007+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.126 seconds
+[2025-09-29T07:06:40.215+0000] {processor.py:161} INFO - Started process (PID=1151) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:06:40.226+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.224+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.258+0000] {processor.py:161} INFO - Started process (PID=1088) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:06:40.265+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.268+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.266+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.283+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:06:40.304+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.304+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:06:40.317+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.317+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:06:40.323+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.323+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:06:40.332+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:06:40.331+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:06:40.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.146 seconds
+[2025-09-29T07:06:40.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.104 seconds
+[2025-09-29T07:07:10.597+0000] {processor.py:161} INFO - Started process (PID=1099) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.598+0000] {processor.py:161} INFO - Started process (PID=1163) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:07:10.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:07:10.601+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.601+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.601+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.622+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.626+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:10.657+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.657+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:07:10.660+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.660+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:07:10.668+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.668+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:07:10.675+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:10.674+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:07:10.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.098 seconds
+[2025-09-29T07:07:10.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.106 seconds
+[2025-09-29T07:07:40.924+0000] {processor.py:161} INFO - Started process (PID=1116) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.924+0000] {processor.py:161} INFO - Started process (PID=1175) to work on /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:07:40.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/migrate_dag.py for tasks to queue
+[2025-09-29T07:07:40.931+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:40.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.930+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:40.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.954+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.963+0000] {processor.py:840} INFO - DAG(s) 'migrasi_recording_dag' retrieved from /opt/airflow/dags/migrate_dag.py
+[2025-09-29T07:07:40.999+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:40.998+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:07:41.003+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:41.003+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-29T07:07:41.015+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:41.015+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:07:41.023+0000] {logging_mixin.py:188} INFO - [2025-09-29T07:07:41.023+0000] {dag.py:3947} INFO - Setting next_dagrun for migrasi_recording_dag to None, run_after=None
+[2025-09-29T07:07:41.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.123 seconds
+[2025-09-29T07:07:41.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/migrate_dag.py took 0.132 seconds
