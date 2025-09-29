@@ -14,7 +14,7 @@ services:
       - ./airflow/dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
       - ./logs:/opt/airflow/logs
-      - /mnt/recordings:/mnt/recordings:ro
+      - /opt/recordings:/opt/recordings:ro
       - ./.env:/opt/airflow/.env
     ports:
       - "8080:8080"
@@ -44,7 +44,7 @@ services:
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts
-      - /mnt/recordings:/mnt/recordings:ro
+      - /opt/recordings:/opt/recordings:ro
       - ./logs:/opt/airflow/logs
       - ./.env:/opt/airflow/.env
     healthcheck:

@@ -60,7 +60,7 @@ def parse_xml(file_path):
         log(f"[ERROR] Failed to parse {file_path}: {str(e)}", level='error')
         return None
 
-def index_files(storage_path="/mnt/recordings"):
+def index_files(storage_path="/opt/recordings"):
     conn = None
     has_errors = False
     try:
@@ -143,4 +143,4 @@ def index_files(storage_path="/mnt/recordings"):
             sys.exit(1)
 
 if __name__ == "__main__":
-    index_files(storage_path="/mnt/recordings")
+    index_files(storage_path="/opt/recordings")

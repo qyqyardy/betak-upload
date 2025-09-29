@@ -4,7 +4,7 @@ Proyek ini adalah sebuah *pipeline* data yang dirancang untuk mengotomatisasi pr
 
 ## 📜 Ringkasan
 
-Sistem ini secara otomatis memindai direktori penyimpanan lokal (`/mnt/recordings`) untuk file rekaman baru (dalam format `.wav` dan `.xml`). Metadata dari file XML diekstrak dan disimpan dalam basis data PostgreSQL. Selanjutnya, file `.wav` diunggah ke *bucket* AWS S3 dengan struktur direktori yang terorganisir. Jika terjadi kegagalan, sistem akan mengirimkan notifikasi email secara otomatis.
+Sistem ini secara otomatis memindai direktori penyimpanan lokal (`/opt/recordings`) untuk file rekaman baru (dalam format `.wav` dan `.xml`). Metadata dari file XML diekstrak dan disimpan dalam basis data PostgreSQL. Selanjutnya, file `.wav` diunggah ke *bucket* AWS S3 dengan struktur direktori yang terorganisir. Jika terjadi kegagalan, sistem akan mengirimkan notifikasi email secara otomatis.
 
 ## ✨ Fitur Utama
 
@@ -58,10 +58,10 @@ Proyek ini terdiri dari beberapa layanan yang bekerja sama, didefinisikan dalam 
     * **SMTP for Notifications**: `SMTP_SERVER`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `NOTIFICATION_EMAIL`
 
 3.  **Siapkan Direktori Data**
-    Pastikan direktori untuk menyimpan file rekaman tersedia dan memiliki data di dalamnya. Secara default, sistem akan memindai direktori `/mnt/recordings`. Anda dapat mengubah *path* ini di file `docker-compose.yml`.
+    Pastikan direktori untuk menyimpan file rekaman tersedia dan memiliki data di dalamnya. Secara default, sistem akan memindai direktori `/opt/recordings`. Anda dapat mengubah *path* ini di file `docker-compose.yml`.
 
     ```bash
-    mkdir -p /mnt/recordings
+    mkdir -p /opt/recordings
     # Salin file .wav dan .xml Anda ke direktori ini
     ```
 
